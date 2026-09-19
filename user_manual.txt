@@ -1,0 +1,4 @@
+Next Song       Ctrl+Alt+Y
+Play/Pause      Ctrl+Alt+I
+Volume Up       Ctrl+Alt+O
+Volume Down     Ctrl+Alt+P

@@ -1,0 +1,69 @@
+{
+  "manifest_version": 3,
+
+  "name": "YouTube Music Controller",
+
+  "version": "1.0.0",
+
+  "description": "Control YouTube Music with keyboard shortcuts.",
+
+  "permissions": [
+    "tabs"
+  ],
+
+  "host_permissions": [
+    "https://music.youtube.com/*"
+  ],
+
+  "background": {
+    "scripts": [
+      "background.js"
+    ]
+  },
+
+  "commands": {
+    "next-song": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+Y",
+        "linux": "Ctrl+Alt+Y"
+      },
+      "description": "Next Song"
+    },
+
+    "play-pause": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+I",
+        "linux": "Ctrl+Alt+I"
+      },
+      "description": "Play/Pause"
+    },
+
+    "volume-up": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+O",
+        "linux": "Ctrl+Alt+O"
+      },
+      "description": "Volume Up"
+    },
+
+    "volume-down": {
+      "suggested_key": {
+        "default": "Ctrl+Alt+P",
+        "linux": "Ctrl+Alt+P"
+      },
+      "description": "Volume Down"
+    }
+  },
+
+  "content_scripts": [
+    {
+      "matches": [
+        "https://music.youtube.com/*"
+      ],
+      "js": [
+        "content.js"
+      ],
+      "run_at": "document_idle"
+    }
+  ]
+}

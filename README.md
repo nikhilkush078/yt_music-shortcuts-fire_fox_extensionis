@@ -20,6 +20,8 @@ A simple Firefox extension to control **YouTube Music** using keyboard shortcuts
 
 Shortcuts can be changed from Firefox's **Manage Extension Shortcuts** settings. :contentReference[oaicite:0]{index=0}
 
+[![Project Demo](https://img.youtube.com/vi/eGl0ucU93us/hqdefault.jpg)](https://youtu.be/eGl0ucU93us)
+
 ## Files
 
 ```text
